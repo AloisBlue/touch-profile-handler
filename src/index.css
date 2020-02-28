@@ -1,13 +1,76 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url("./images/background.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* header */
+.header {
+  background-color: yellow;
+  height: 60px;
+  margin-top: -15px;
+  padding-bottom: 10px;
+}
+
+.header-content {
+  float: left;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+  clear: both;
+  background-color: yellow;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* landing */
+.landing {
+  color: black;
+  height: 300px;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: .5em;
+  background: rgba(255, 255, 0, 0.8);
+  margin-top: 20px;
+}
+
+.modal-background {
+  background-color: yellow;
+  height: 25px;
+  padding-top: 5px;
+  border-radius: .5em;
+}
+
+.modal-text {
+  background-color: black;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  opacity: .7;
+}
+
+.button {
+  margin-top: 180px;
+}
+
+.button-background {
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 50%;
+  height: 30px;
+}
+
+.button-background:hover {
+  background-color: #232323;
 }
