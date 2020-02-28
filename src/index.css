@@ -74,3 +74,33 @@ body {
 .button-background:hover {
   background-color: #232323;
 }
+
+/* view users */
+.view-users {
+  background: white;
+  background-size: cover;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  height: 520px;
+  width: 100%;
+}
+
+.users-card {
+  border: 1px solid black;
+  border-radius: .5em;
+  width: 40%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.h4-users {
+  background-color: black;
+  color: white;
+  height: 25px;
+  margin-top: 0;
+  padding: 5px 0 0 5px;
+  border-radius: .5em;
+  text-align: left;
+
+}
