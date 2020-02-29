@@ -2,11 +2,19 @@ body {
   background: url("./images/background.jpg") no-repeat;
   background-size: cover;
   width: 100%;
+  font-family: Helvetica;
+}
+
+.App {
+  border: 1px solid grey;
+  height: 600px;
+  background: rgba(0, 141, 177, 0.2);
 }
 
 /* header */
 .header {
-  background-color: yellow;
+  background-color: #008db1;
+  color: white;
   height: 60px;
   margin-top: -15px;
   padding-bottom: 10px;
@@ -22,9 +30,10 @@ body {
 /* footer */
 .footer {
   clear: both;
-  background-color: yellow;
-  height: 30px;
-  position: absolute;
+  background-color: #008db1;
+  position: fixed;
+  color: white;
+  height: 20px;
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
@@ -38,12 +47,13 @@ body {
   width: 30%;
   margin: 0 auto;
   border-radius: .5em;
-  background: rgba(255, 255, 0, 0.8);
+  background: rgba(0, 141, 177, 0.4);
   margin-top: 20px;
 }
 
 .modal-background {
-  background-color: yellow;
+  background-color: #008db1;
+  color: white;
   height: 25px;
   padding-top: 5px;
   border-radius: .5em;
@@ -62,15 +72,178 @@ body {
 }
 
 .button-background {
-  color: white;
+  color: ;
   font-size: 18px;
-  background-color: black;
-  border: 1px solid black;
+  background-color: lime;
+  border: 1px solid lime;
   border-radius: 3px;
   width: 50%;
   height: 30px;
 }
 
 .button-background:hover {
-  background-color: #232323;
+  background-color: black;
+  color: lime;
+}
+
+/* view users */
+.view-users {
+  background: white;
+  background-size: cover;
+  margin-top: 5px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  height: 520px;
+  width: 100%;
+}
+
+.users-card {
+  border: 1px solid black;
+  border-radius: .5em;
+  width: 40%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.h4-users {
+  background-color: lightgrey;
+  border-bottom: 1px solid black;
+  height: 25px;
+  margin-top: 0;
+  padding: 5px 0 0 5px;
+  border-radius: .5em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.l-display {
+  color: #008db1;
+}
+
+.users-list {
+  height: 500px;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.user-section {
+  height: 30px;
+  border-bottom: 1px solid #d6d6d6;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.image {
+  border: 1px solid black;
+  border-radius: 5em;
+  float: right;
+  margin-right: 10px;
+  background-color: firebrick;
+}
+
+.user-name {
+  text-align: left;
+  padding-left: 10px;
+  color: #008db1;
+}
+
+.user-link {
+  float: right;
+  color: grey;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.image-edit {
+  border: 1px solid black;
+  border-radius: 5em;
+  margin-right: 10px;
+  background-color: firebrick;
+}
+/* edit users */
+.edit-user {
+  background: white;
+  background-size: cover;
+  margin-top: 5px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  height: 540px;
+  width: 100%;
+}
+
+.edit-form {
+  clear: both;
+  border: 1px solid #d6d6d6;
+  background: ghostwhite;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.edit-form label {
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+  text-align: left;
+  color: grey;
+}
+
+.edit-form input[type=text], textarea[type=text] {
+  width: 100%;
+  padding: 5px 8px;
+  border: #008db1 1px solid;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.edit-form input[type=submit] {
+  width: 90%;
+  background-color: #008db1;
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+}
+
+.edit-form input[type=submit]:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid #008db1;
+}
+
+.back-button {
+  float: left;
+  margin-bottom: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #008db1;
+  color: #008db1;
+}
+
+.back-button:hover {
+  background-color: #008db1;
+  color: white;
+}
+
+.join {
+  color: grey;
+  font-size: 12px;
+}
+
+.update {
+  color: grey;
+  font-size: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+.name-info {
+  color: #008db1;
+}
+
+.central {
+  clear: both;
+  margin: 0 auto;
 }
