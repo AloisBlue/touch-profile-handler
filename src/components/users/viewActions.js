@@ -8,7 +8,7 @@ const UserItems = ({ user }) => {
     <div className="view-actions">
       <div className="user-section">
         <div>
-          <Link to="/edit-users" className="user-link">more</Link>
+          <Link to={`/edit-users/${user.id}`} className="user-link">more</Link>
           <img
             className="image"
             src={avatarImage}
@@ -25,7 +25,11 @@ const UserItems = ({ user }) => {
 
 UserItems.propTypes = {
   user: PropTypes.shape({
-    id: PropTypes.number.isRequired
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    occupation: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    bio: PropTypes.string.isRequired,
   }).isRequired
 }
 

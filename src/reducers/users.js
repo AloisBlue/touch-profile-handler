@@ -1,7 +1,8 @@
-import { GET_ALL_USERS, USERS_LOADING } from "../types";
+import { GET_ALL_USERS, USERS_LOADING, GETS_SINGLE_USER } from "../types";
 
 const initial = {
   allUsers: null,
+  singleUser: null,
   loading: false
 }
 
@@ -16,6 +17,12 @@ const users = (state = initial, action = {}) => {
       return {
         ...state,
         allUsers: action.payload,
+        loading: false
+      };
+    case GETS_SINGLE_USER:
+      return {
+        ...state,
+        singleUser: action.payload,
         loading: false
       };
     default:

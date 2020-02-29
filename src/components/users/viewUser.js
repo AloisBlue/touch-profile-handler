@@ -20,7 +20,8 @@ class ViewUser extends Component {
       userItems = <Loader />
     } else if (allUsers.length > 0) {
       lengthDisplay = allUsers.length;
-      userItems = allUsers.map(user =>
+      const sorted = allUsers.sort((a,b) => a.name.localeCompare(b.name));
+      userItems = sorted.map(user =>
         <div>
           <ViewActions key={user.id} user={user} />
         </div>

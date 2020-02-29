@@ -31,9 +31,9 @@ body {
 .footer {
   clear: both;
   background-color: #008db1;
+  position: fixed;
   color: white;
-  height: 30px;
-  position: absolute;
+  height: 20px;
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
@@ -90,6 +90,7 @@ body {
 .view-users {
   background: white;
   background-size: cover;
+  margin-top: 5px;
   padding-top: 1px;
   padding-bottom: 30px;
   height: 520px;
@@ -153,4 +154,96 @@ body {
   color: grey;
   font-style: italic;
   font-size: 12px;
+}
+
+.image-edit {
+  border: 1px solid black;
+  border-radius: 5em;
+  margin-right: 10px;
+  background-color: firebrick;
+}
+/* edit users */
+.edit-user {
+  background: white;
+  background-size: cover;
+  margin-top: 5px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  height: 540px;
+  width: 100%;
+}
+
+.edit-form {
+  clear: both;
+  border: 1px solid #d6d6d6;
+  background: ghostwhite;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.edit-form label {
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+  text-align: left;
+  color: grey;
+}
+
+.edit-form input[type=text], textarea[type=text] {
+  width: 100%;
+  padding: 5px 8px;
+  border: #008db1 1px solid;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.edit-form input[type=submit] {
+  width: 90%;
+  background-color: #008db1;
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+}
+
+.edit-form input[type=submit]:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid #008db1;
+}
+
+.back-button {
+  float: left;
+  margin-bottom: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #008db1;
+  color: #008db1;
+}
+
+.back-button:hover {
+  background-color: #008db1;
+  color: white;
+}
+
+.join {
+  color: grey;
+  font-size: 12px;
+}
+
+.update {
+  color: grey;
+  font-size: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+.name-info {
+  color: #008db1;
+}
+
+.central {
+  clear: both;
+  margin: 0 auto;
 }
